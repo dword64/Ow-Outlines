@@ -17,10 +17,6 @@ Why not?. I also cba for the Code(Clean Code etc) **Also its not the safest and 
 Simple, **Clone the Repository** and **open the Solution**, *you may need some SDK's as we are using C++ Version 17*.
 To actually *Build* the Project all you have to do is select the **Release Configuration** and... well... *build it*.
 
-## Credits
-
-- [nefarius](https://github.com/nefarius/Injector) For the injector that the batch file uses.
-
 ## License
 
 I have decided to put this Project under **Public Domain**!
