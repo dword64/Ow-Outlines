@@ -8,11 +8,9 @@ Why not?. I also cba for the Code(Clean Code etc) **Also its not the safest and 
 
 ## How to Use ?
 
-1. Download the tool from the release site.
-2. Execute the batch file.
-3. Start up Overwatch and enjoy.!
-
-**Note:** `If you build the project yourself, it is recommended to use the same injector as the one used in the batch file or any injector of your choice.`
+1. Download the DLL from the release site.
+2. Use a Injector of your choice!
+3. Start up Overwatch and enjoy!
 
 ## How to Build ?
 
