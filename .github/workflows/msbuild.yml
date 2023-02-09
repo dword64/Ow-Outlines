@@ -38,4 +38,4 @@ jobs:
        prerelease: false
        title: "New Release!"
        files: | 
-         x64/Release/OwOutlines.dll
+         x64/Release/OutlineESP.dll
