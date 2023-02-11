@@ -21,8 +21,8 @@ jobs:
     - name: Check for changes in OutlineESP folder
       run: |
         CHANGED_FILES=$(curl -Ls "$GITHUB_EVENT_PATH/diff" | grep -E "^[+-]{3} b/([^[:space:]]+)" | awk '{print $2}')
-        CHANGED_ANTIFLAG_FILES=$(echo "$CHANGED_FILES" | grep -E "^OutlineESP/")
-        if [ -z "$CHANGED_ANTIFLAG_FILES" ]; then
+        CHANGED_OUTLINES_FILES=$(echo "$CHANGED_FILES" | grep -E "^OutlineESP/")
+        if [ -z "$CHANGED_OUTLINES_FILES" ]; then
           echo "No changes were made in the OutlineESP folder. Exiting."
           exit 0
         fi
@@ -41,6 +41,11 @@ jobs:
         automatic_release_tag: "latest"
         prerelease: false
         title: "New Release!"
-        body: ${{github.event.head_commit.message}}
+        body: |
+          ${{ if eq (github.event.head_commit.message) '' }}
+            Commit ID: ${{ github.sha }}
+          ${{ else }}
+            ${{github.event.head_commit.message}}
+          ${{ end }}
         files: | 
           x64/Release/OutlineESP.dll
