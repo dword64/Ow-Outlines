@@ -2,5 +2,5 @@
 
 namespace offset
 {
-	uint64_t GlowESP = 0xE78D10;
+	uint64_t GlowESP = 0xE9A4E0;
 }
